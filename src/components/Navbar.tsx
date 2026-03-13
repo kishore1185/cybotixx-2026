@@ -4,6 +4,8 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
+
 
 const links = [
   { to: "/", label: "Home" },
@@ -18,9 +20,19 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
-        <Link href="/" className="font-mono text-lg font-bold tracking-widest uppercase">
-          Cybotixx
-        </Link>
+        <Link
+  href="/"
+  className="flex items-center gap-2 font-mono text-lg font-bold tracking-widest uppercase"
+>
+  <Image
+    src="/logo.png"
+    alt="Cybotixx Logo"
+    width={34}
+    height={34}
+    className="object-contain"
+  />
+  Cybotixx
+</Link>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
