@@ -127,9 +127,10 @@ const Registrations = () => {
                         </Badge>
                       </td>
                       <td className="p-3 hidden lg:table-cell text-muted-foreground text-xs">
-                        {r.teamMembers && r.teamMembers.length > 0
-                        ? r.teamMembers.map((m: TeamMember) => m.name).join(", ")
-                        : r.participant?.fullName || "—"}
+                        {r.participant?.fullName}
+                         {r.teamMembers && r.teamMembers.length > 0
+                         ? `, ${r.teamMembers.map((m: TeamMember) => m.name).join(", ")}`
+                          : ""}
                     </td>
                     </tr>
                   ))
