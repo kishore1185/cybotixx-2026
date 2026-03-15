@@ -19,8 +19,8 @@ const HeroSection = () => (
         <p className="font-mono text-xs tracking-[0.3em] uppercase text-muted-foreground mb-6">
           BCA Tech Forum
         </p>
-        <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold tracking-tighter mb-6">
-          Cybotixx
+        <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold tracking-tighter mb-6 animate-fadeInUp">
+            CYBOTIXX
         </h1>
         <p className="font-mono text-sm sm:text-base text-muted-foreground mb-2 tracking-wider">
           Innovate. Code. Create.
